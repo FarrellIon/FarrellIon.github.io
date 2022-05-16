@@ -1,4 +1,4 @@
-<template v-if="!!contents">
+<template>
   <div>
     <carousel ref="carousel" class="w-full flex flex-wrap relative py-6 viewheight content-center" :items-to-show="1" :items-to-scroll="1" :wrap-around="true" :breakpoints="breakpoints" :autoplay="5000" :style="'background: linear-gradient(16deg, #bf00fe 0%, #7658f4 100%)'">
         <slide v-for="content in contents" class="flex flex-wrap" :key="content.id">
